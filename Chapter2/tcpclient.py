@@ -1,8 +1,9 @@
 #!/bin/python3
 
-#Simple tcp client
+import socket
+
+#A simple tcp client
 def main():
-    import socket
 
     target_host = "www.google.com"
     target_port = 80
