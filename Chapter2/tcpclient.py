@@ -5,8 +5,8 @@ import socket
 #A simple tcp client
 def main():
 
-    target_host = "www.google.com"
-    target_port = 80
+    target_host = "127.0.0.1"
+    target_port = 9998
 
     #create a socket object
     client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -15,7 +15,7 @@ def main():
     client.connect((target_host,target_port))
 
     #send some data
-    client.send(b"GET / HTTP/1.1\r\nHost: google.com\r\n\r\n")
+    client.send(b"AAABBBCCCDDD\r\n\r\n")
 
     #receive some data
     response = client.recv(4096)
