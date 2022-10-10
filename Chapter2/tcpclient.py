@@ -1,6 +1,6 @@
 #!/bin/python3
 
-
+#Simple tcp client
 def main():
     import socket
 
